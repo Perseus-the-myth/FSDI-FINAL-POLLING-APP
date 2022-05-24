@@ -1,0 +1,23 @@
+
+html, body {
+    background-color: black;
+    color: rgb(55, 224, 55);
+    text-shadow: #333;
+    font-size: x-large;
+}
+
+.login-form {
+    border: 1px solid #333;
+}
+
+#id_username {
+    
+}
+
+img{
+    height: 300px;
+}
+
+.image-container {
+    text-align: center;
+}

@@ -1,9 +1,20 @@
-<form method="post">
-    {% csrf_token %}
-    {{form.as_p}}
-    <button type="submit">Log in</button>
-</form>
+{% load static %}
+<link href="{% static 'css/login.css' %}" rel="stylesheet">
+<div>
+    <div class="login-form">
+        <form method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">Log in</button>
+        </form>
+    </div>
 
-<h4>Hi, need an account ?</h4>
-<br>
-<a href="{% url 'signup' %}">SignUp here</a>
+    <h4>Hi, need an account ?</h4>
+    <br>
+    <a href="{% url 'signup' %}">SignUp here</a>
+
+    <div class="image-container">
+        <img
+            src="https://th.bing.com/th/id/R.e567b83db5ebfd00522a8d7e015fae15?rik=xj9ERChDP8MgBQ&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fyik%2fLgb%2fyikLgb96T.png&ehk=WOYbnRzhNavOxGtwjPBZMm0WcQU6G3c3lUKaPj8heYc%3d&risl=&pid=ImgRaw&r=0">
+    </div>
+</div>
